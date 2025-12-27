@@ -1,0 +1,42 @@
+site_name: Project Documentation
+site_description: Technical documentation for the project
+site_author: Luis Miguel Loaiza Zapata
+copyright: >
+  Copyright © 2025
+  <a href="https://github.com/your-username">Luis Miguel Loaiza Zapata</a>
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+  - Theory: theory.md
+  - Implementation: implementation.md
+  - Results: results.md
+  - References: references.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.details
+
+extra_javascript:
+  - js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
